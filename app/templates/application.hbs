@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+{{!-- app/templates/application.hbs --}}
 
-{{outlet}}
+<h2 id="title">
+  {{#link-to 'books'}}Our Awesome Bookstore{{/link-to}}
+</h2>
+
+<div class="{{if blur 'blur-background'}}">
+  {{outlet}}
+</div>
